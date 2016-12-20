@@ -1,0 +1,110 @@
+#no data is real
+
+#create database and insert data
+
+INSERT INTO OrderDetail (OrderDetailID, Quantity, ProductID, OrderID) VALUES		
+(28672, 1, 785639, 19299),			
+(28673, 2, 472910, 19300),			
+(28674, 4, 828389, 19301),				
+(28675, 5, 928302, 19302),			
+(28676, 3, 109283, 19303),				
+(28677, 6, 928303, 19304),				
+(28678, 3, 928283, 19305),				
+(28679, 2, 182833, 19306),				
+(28680, 1, 199298, 19307),				
+(28681, 1, 379992, 19308),				
+(28682, 2, 288833, 19309);		
+							
+INSERT INTO Orders (OrderID, CustomerID, OrderDate, ShipDate, DueDate, ShipCost, TaxAmount, OrderTotal) VALUES
+(19299, 63772299, 2016/01/01 00:00:00, 2016/01/03, 2016/01/04, 10, 3, 63),
+(19300, 28737482, 2016/01/02 00:00:00, 2016/01/04, 2016/01/05, 10, 4.8, 94.8),
+(19301, 83773728, 2016/01/03 00:00:00, 2016/01/05, 2016/01/06, 10, 6, 116),
+(19302,28100283, 2016/01/04 00:00:00, 2016/01/06, 2016/01/07, 10, 10.5, 195.5),
+(19303, 29117228, 2016/01/05 00:00:00, 2016/01/07, 2016/01/08, 10, 9.9, 184.9),
+(19304, 76820110, 2016/01/06 00:00:00, 2016/01/08, 2016/01/09, 10,12.6, 232.6),
+(19305, 34519028, 2016/01/07 00:00:00, 2016/01/09, 2016/01/10, 10, 8.1, 153.1),
+(19306, 89283011, 2016/01/08 00:00:00, 2016/01/10, 2016/01/11, 10, 1.8, 41.8),
+(19307, 67283940, 2016/01/09 00:00:00, 2016/01/11, 2016/01/12, 10, 12, 222),
+(19308, 28323042, 2016/01/10 00:00:00, 2016/01/12, 2016/01/13, 10, 2.34, 51.34),
+(19309, 51628239, 2016/01/11 00:00:00, 2016/01/13, 2016/01/14, 10, 0.6, 20.6);
+							
+INSERT INTO Products (ProductID, ProductName, ProductCost, ProductPrice, CatergoryID,	SupplierID) VALUES
+(785639, ‘Personalized Heart Necklace’, 35, 50,’76853’, ‘1717292’),		
+(472910, ‘Zodiac Bracelet’, 15, 40, ‘93993’, ‘1929293’),		
+(828389, ‘Sorority Baseball Cap’, 10, 25, ‘22833’, ‘9323922’),		
+(928302, ‘Men's Canvas Backpack’, 20, 35, ‘29304’, ‘8473892’),		
+(109283, ‘Monogrammed Knee High Boots’, 30, 55, ‘28340’, ‘9023743’),		
+(928303, ‘White Flower Girl's Dress’, 15, 35, ‘29994’, ‘2993738’),		
+(928283, ‘1990 Diamond Sunglasses’, 30, 45, ‘22993’, ‘3838292’),		
+(182833, ‘Skeleton Barrette’, 9, 15, 19440, ‘3919394’),		
+(199298, ‘Black Leather Messenger Bag’, 100, 200, 29103, ‘3937992’),		
+(379992, ‘Gold Tree Belt Buckle’, 29, 39, ‘89992’, ‘9382033’),		
+(288833, ‘SuperMan Cookie Cutter’, 2, 5, ‘10022’, ‘6272930’);		
+							
+INSERT INTO Customers (CustomerID, CustomerFirstName, CustomerLastName) VALUES				
+(63772299, ‘Amanda’, ‘Joans’),				
+(28737482, ‘Claire’, ‘Graham’),				
+(83773728, ‘Deidre’, ‘Hughes’),				
+(28100283, ‘Dylan’, ‘Brown’),				
+(29117228, ‘Ava’, ‘Martin’),				
+(76820110, ‘Dorothy’, ‘Paterson’),					
+(34519028, ‘Donna’, ‘Scott’),				
+(89283011, ‘Ruth’, ‘Miller’),				
+(67283940, ‘Sonia’, ‘Ross’),				
+(28323042, ‘Adam’, ‘Anderson’),					
+(51628239, ‘Wendy’, ‘Sharpe’);				
+							
+INSERT INTO Customer Info (CustomerInfoID, CustomerID, CustomerEmail, CustomerPhone, CustomerAddress, CustomerCity, CustomerState, CustomerZip) VALUES
+
+(400549492, 63772299, ‘ajoans@yahoo.com’, ‘5555555555’, ‘100 Grove Street’, ‘Kansas City’, ‘Missouri’, 64101),
+(400549493, 28737482, ‘cgraham@gmail.com’, ‘5555555556’ ‘50 Union Street’, ‘Columbus’, ‘Ohio’, 43085),
+(400549494, 83773728, ‘dhughes@hotmail.com’, ‘5555555557’, ‘300 Forest Road’, ‘Raleigh’, ‘North Carolina’, ‘21601’),
+(400549495, 28100283, ‘dbrown@gmail.com’, ‘5555555558’, ‘24 Parks Road’, ‘Dallas’, ‘Texas’ ‘76048’),
+(400549496, 29117228, ‘amartin@yahoo.com’, ‘5555555559’, ‘36 Washington Street’, ‘Scottsdale’, ‘Arizona’, ‘85250’),
+(400549497, 76820110, ‘dpaterson@babson.edu’, ‘5555555560’, ‘46B Baker Road’, ‘Boston’, ‘Massachusetts’, ‘24570’),
+(400549498, 34519028, ‘dscott@yahoo.com’, ‘5555555561’, ‘92 Lincoln Square’, ‘Atlanta’, ‘Georgia’, ‘30301’),
+(400549499, 89283011, ‘rmiller@hotmail.com’, ‘5555555562’, ‘67 Hilltop Road’, ‘Seattle’, ‘Washington’, ‘98101’),
+(400549500, 67283940, ‘sross@gmail.com’, ‘5555555563’, ‘83 Elliot Place’, ‘Sacramento’, ‘California’, ‘94203’),
+(400549501, 28323042, ‘aanderson@hotmail.com’, ‘5555555564’, ‘72 West Main Street’,	‘Keene’, ‘New Hampshire’, ‘34310’),
+(400549502, 51628239, ‘wsharpe@gmail.com’, ‘5555555565’, ‘62 Concord Road’, ‘Orlando’, ‘Florida’, ‘32082’);
+							
+							
+INSERT INTO Category (CatergoryID, CategoryName)						
+(76853, ‘Personalised Necklaces’),					
+(93993, ‘Bracelets’),						
+(22833, ‘Baseball Cap’),						
+(29304, ‘Canvas Backpacks’),						
+(28340, ‘Knee High Boots’),						
+(29994, ‘Girls Dress’),						
+(22993, ‘Sunglasses’),						
+(19440, ‘Barretes’),						
+(29103, ‘Leather Purses’),						
+(89992, ‘Belt Buckles’),				
+(10022, ‘Bakings Novelty’);						
+							
+INSERT INTO Subcatergory (SubcatergoryID, SubcatergoryName, CatergoryID)	VALUES
+(37373820, ‘Necklace/Jewelry’ 76853),				
+(37373821, ‘Bracelet/Jewelry’, 93993),				
+(37373822, ‘Sorority Hat’, 22833),					
+(37373823, ‘Backpack’, 29304),				
+(37373824, ‘Boots/Shoes’, 28340),					
+(37373825, ‘Dress/Youth Girl's’, 29994),					
+(37373826, ‘Eyewear’, 22993),					
+(37373827, ‘Hair Accessories’, 19440),					
+(37373828, ‘Bags and Leather Goods’, 29103),					
+(37373829, ‘Belts/Belt Accessories’, 89992),					
+(37373830, ‘Baking Accessory’, 10022);					
+							
+INSERT INTO Suppliers (SupplierID, SupplierName, SupplierStreet, SupplierCity, 	SupplierState, SupplierZip, SupplierPhone) VALUES
+(1717292, ‘Goodtouch’, ‘6 South Gulf Drive’, ‘Franklin’, ‘Massachusetts’, ‘10010’, ‘7777777777’),	
+(1929293, ‘Accessory Planet’, ‘7685 North Albany Drive’, ‘Pembroke Pines’, ‘Florida’, ‘10020’, ‘7777777778’),
+(9323922, ‘Blue Glass Products’, ‘333 South Penn Street’, ‘North Bergen’, ‘New Jersey’,10030, ‘7777777779’),	
+(8473892, ‘Best Modern’, ‘21 Ohio Avenue’, ‘Ithaca’, ‘New York’, ‘10040’, ‘7777777780’),	
+(9023743, ‘John's Stores’, ‘8288 Bald Hill Street’, ‘La Vergne’, ‘Tennessee’, ‘10050’, ‘7777777781’),
+(2993738, ‘Island Representatives’, ‘913 East Westminster Street’, ‘Olympia’, ‘Washington’, ‘10060’, ‘7777777782’),
+(3838292, ‘Bill & Bob's’, ‘778 Manhattan Street’, ‘Torrington	‘, ‘Connecticut’, ‘10070’, ‘7777777783’),	
+(3919394, ‘Stuff Magic’, ‘304 Spruce Ave’, ‘Reston’, ‘Virginia’, ‘10080’, ‘7777777784’),	
+(3937992, ‘Leather and Co’, ‘40 Cedar Swamp St’, ‘Westport’, ‘Connecticut’, ‘10090’, ‘7777777785’),
+(9382033, ‘Accessory Design’, ‘542 Peg Shop St’, ‘Nanuet’, ‘New York’, ‘10100’, ‘7777777786’),	
+(6272930, ‘Open Baking’, ‘258 Lyme Lane’,	‘Falls Church’, ‘Virginia’, ‘10110’, ‘7777777787’);
+						
